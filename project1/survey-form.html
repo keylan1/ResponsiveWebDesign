@@ -9,7 +9,14 @@
 </head>
 
 <body>
-
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Project 1 of freeCodeCamp's Responsive Design Certification</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name: <input id="name" type="text" name="name" required /></label>
+    <label id="email-label" for="email">Email: <input id="email" type="email" name="email" required /></label>
+    <label id="number-label" for="number">Number: <input id="number" type="number" name="number" pattern="[0-9]"
+        min="12" max="99" required /></label>
+  </form>
 </body>
 
 </html>
