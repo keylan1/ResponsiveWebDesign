@@ -1,0 +1,18 @@
+body {
+  font-family: Tahoma;
+  background-color: #b1beb3;
+  border-color: #c58781;
+  font-size: 16px;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+p {
+  font-style: italic;
+}
+
+form {}
