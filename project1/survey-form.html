@@ -12,10 +12,35 @@
   <h1 id="title">Survey Form</h1>
   <p id="description">Project 1 of freeCodeCamp's Responsive Design Certification</p>
   <form id="survey-form">
-    <label id="name-label" for="name">Name: <input id="name" type="text" name="name" required /></label>
-    <label id="email-label" for="email">Email: <input id="email" type="email" name="email" required /></label>
-    <label id="number-label" for="number">Number: <input id="number" type="number" name="number" pattern="[0-9]"
-        min="12" max="99" required /></label>
+    <fieldset>
+      <label id="name-label" for="name">Name: <input id="name" type="text" name="name" required /></label>
+      <label id="email-label" for="email">Email: <input id="email" type="email" name="email" required /></label>
+      <label id="number-label" for="number">Number: <input id="number" type="number" name="number" pattern="[0-9]"
+          min="12" max="99" required /></label>
+    </fieldset>
+    <!--dropdown options-->
+    <fieldset>
+      <label for="dropdown">Does the form work?
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+          <option value="3">Sort of</option>
+        </select>
+      </label>
+    </fieldset>
+    <!--radio button options-->
+    <fieldset>
+      <label for="front-end"><input type="radio" value="front-end" name="road-map" />Front-end</label>
+      <label for="back-end"><input type="radio" value="back-end" name="road-map" />Back-end</label>
+      <label for="full-stack"><input type="radio" value="full-stack" name="road-map" />Full-stack</label>
+    </fieldset>
+    <!--textarea-->
+    <fieldset>
+      <textarea></textarea>
+    </fieldset>
+    <!--submit button-->
+    <input id="submit" type="submit" value="Submit" />
   </form>
 </body>
 
