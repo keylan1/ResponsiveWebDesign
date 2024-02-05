@@ -16,6 +16,10 @@
   /* Enable scrolling if content exceeds the height */
 }
 
+nav header {
+  font-weight: bold;
+}
+
 #navbar ul {
   list-style: none;
 }
@@ -26,6 +30,10 @@
   margin-bottom: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #a08282;
 }
 
 /* Media query for regular-sized devices (laptops, desktops) */
@@ -44,6 +52,14 @@
   }
 }
 
+section header {
+  padding-bottom: 1px;
+}
+
+section {
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 767px) {
   #navbar {
     display: none;
@@ -59,7 +75,7 @@
 }
 
 code {
-  display: inline-block;
+  display: block;
   background-color: #f8f8f8;
   border: 1px solid #333;
   /* Light black border */
