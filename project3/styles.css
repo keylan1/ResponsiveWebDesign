@@ -28,4 +28,25 @@
   #navbar {
     width: 250px;
   }
+
+  #main-doc {
+    margin-left: 250px;
+    /* Adjust based on the width of the navbar */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #navbar {
+    display: none;
+    /* Hide the navbar on smaller screens */
+  }
+
+  #main-doc {
+    margin-left: 0;
+    /* Remove the margin for full width */
+    padding: 20px;
+    box-sizing: border-box;
+  }
 }
