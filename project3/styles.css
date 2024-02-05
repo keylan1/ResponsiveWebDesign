@@ -1,4 +1,7 @@
-/* General styling for the navbar */
+* {
+  font-family: Tahoma, sans-serif;
+}
+
 #navbar {
   position: fixed;
   top: 0;
@@ -13,7 +16,11 @@
   /* Enable scrolling if content exceeds the height */
 }
 
-/* Styling for navbar links */
+#navbar ul {
+  list-style: none;
+}
+
+
 .nav-link {
   display: block;
   margin-bottom: 10px;
@@ -49,4 +56,18 @@
     padding: 20px;
     box-sizing: border-box;
   }
+}
+
+code {
+  display: inline-block;
+  background-color: #f8f8f8;
+  border: 1px solid #333;
+  /* Light black border */
+  border-radius: 4px;
+  padding: 4px;
+  /* Adjust padding as needed */
+  font-family: 'Courier New', monospace;
+  color: #333;
+  white-space: pre-wrap;
+  /* Preserve formatting, including line breaks */
 }
