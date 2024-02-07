@@ -53,9 +53,6 @@ main {
   /* Added top padding to offset fixed navbar */
 }
 
-section {
-  margin-bottom: 40px;
-}
 
 h2 {
   color: #333;
@@ -118,8 +115,15 @@ h2 {
 #newsletter {
   background-color: #333;
   color: #fff;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 5px solid white;
+}
+
+#newsletter h2 {
+  color: #fff;
 }
 
 #form {
@@ -137,10 +141,14 @@ h2 {
 
 #submit {
   padding: 10px 20px;
-  background-color: #fff;
   color: #333;
   border: none;
   cursor: pointer;
+  box-shadow: 2px 2px gray;
+  margin: 15px;
+  border-radius: 5px;
+  background-color: #7eccad;
+  font-weight: bold;
 }
 
 #submit:hover {
@@ -153,6 +161,11 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Media Query for Responsive Design */
