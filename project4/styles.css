@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Added to include padding and border in element's total width and height */
+}
+
+/* Header Styles */
+#header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+
+  position: fixed;
+  /* Fixed positioning to keep the navbar at the top */
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  width: 60vw;
+}
+
+#header-img {
+  width: 100px;
+  height: 50px;
+  align-items: center;
+  /* Adjust as needed */
+}
+
+nav>ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+/* Main Content Styles */
+main {
+  padding: 70px 20px 20px;
+  /* Added top padding to offset fixed navbar */
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+.intro-paragraph {
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+/* Video Section Styles */
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Options Section Styles */
+#options {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#options>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border-radius: 3px;
+  background-color: #d6d6d6;
+}
+
+.option p {
+  margin: 20px;
+  text-align: justify;
+}
+
+
+.price {
+  font-style: italic;
+}
+
+.btn {
+  border: 0;
+  box-shadow: 2px 2px gray;
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #7eccad;
+  font-weight: bold;
+}
+
+/* Newsletter Section Styles */
+#newsletter {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#email {
+  padding: 10px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+#submit {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #ddd;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+  #header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #header-img {
+    margin-bottom: 20px;
+  }
+
+}
